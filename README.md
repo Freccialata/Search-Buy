@@ -2,7 +2,9 @@
 
 Project for: *Università degli Studi di Milano - Applicazioni web e cloud*
 
-Gianluca Rubino *(2019)*
+Gianluca Rubino
+
+*AY 2018/2019*
 
 ## Website Presentation
 
