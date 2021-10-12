@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<head>
+    <title>S&B - acquista</title>
+    <link rel="stylesheet" href="styleGeneral.css">
+</head>
+
+<body>
+    <header id="main-header">
+    </header>
+    <header class="container">
+        <nav class="navigazione-acquisti">
+            <div class="ricerca">
+                <input class="barra-ricerca" type="text" placeholder="🔍 cerca qualcosa">
+                <button type="button" class="btn">Cerca</button>
+            </div>
+            <div class="account-utente">
+                <a href="dettagliUtente.html">
+                    <button type="button" class="btn">Account utente</button>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <section class="container">
+        <h2 class="center-text">Prodotti disponibili:</h2>
+        <!--Filtri prodotti e ricerca-->
+        <nav class="filtro-prodotti">
+            <h4>Filtra per</h4>
+            <ul>
+                <li>
+                    <input type="radio" name="tipo-filtro" class="filter-boxes" value="nome" checked> nome
+                </li>
+                <li>
+                    <input type="radio" name="tipo-filtro" class="filter-boxes" value="caratteristiche"> caratteristiche
+                </li>
+                <li>
+                    <input type="radio" name="tipo-filtro" class="filter-boxes" value="prezzo"> prezzo
+                </li>
+                <li>
+                    <input type="number" id="minNumb" placeholder="prezzo minimo" class="filter-boxes">
+                </li>
+                <li>
+                    <input type="number" id="maxNumb" placeholder="prezzo massimo" class="filter-boxes">
+                </li>
+            </ul>
+        </nav>
+        <!--Visualizzazione dei prodotti-->
+        <div class="contenitore-prodotti">
+        </div>
+        <!--Tutti i prodotti-->
+    </section>
+    <section class="carrello container">
+        <h2 class="center-text">CARRELLO</h2>
+        <table class="container">
+            <tr>
+                <th>Immagine</th>
+                <th>Nome</th>
+                <th>Prezzo</th>
+                <th>Quantità</th>
+            </tr>
+        </table>
+        <table class="container">
+            <tr>
+                <td>
+                    <div class="cart-total">
+                        Totale €<span>0</span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" class="buy-btn btn">Acquista ora</button>
+                </td>
+                <td>
+                    <button id="clear-cart-btn" type="button" class="btn red-btn">Svuota Carrello</button>
+                </td>
+            </tr>
+        </table>
+        </div>
+    </section>
+    <footer id="main-footer">
+    </footer>
+</body>
+<script src="js/classi.js"></script>
+<script src="js/main.js"></script>
+
+</html>

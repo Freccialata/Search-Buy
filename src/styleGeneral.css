@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+:root {
+  --coolGray: #35393c;
+  --bluino: #2660a4;
+  --fumoBianco: #edf7f6;
+  --arancio: #c47335;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: roboto, arial;
+  color: var(--coolGray);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--coolGray);
+  background-color: var(--fumoBianco);
+}
+
+header, footer {
+  background-color: var(--arancio);
+  max-width: 110em;
+  margin: 0 auto;
+  padding: 0 1.5em;
+  border-radius: .4em;
+}
+
+.home-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-image {
+  width: 15em;
+  margin: 1em;
+}
+
+.left-main-footer .logo-image {
+  width: 8em;
+  margin: 1em 0 1em;
+}
+
+.header-nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-nav ul {
+  /*Tolgo i defaults*/
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  margin: .05em;
+}
+
+.header-nav li {
+  margin: .5em;
+  display: flex;
+  align-items: center;
+}
+
+.header-nav li:hover {
+  background-color: rgba(255,255,255, 10%);
+}
+
+.header-nav a, .title-main{
+  color: var(--fumoBianco);
+}
+
+.header-nav a {
+  display: inherit;
+  text-decoration: none;
+  padding: 1em;
+}
+.header-nav a:hover {
+  color: rgb(230, 230, 230);
+}
+
+.header-nav li:last-child{
+  background-color: rgba(0, 0, 0, 0);
+  /*Rimuovo l'effetto hover che si crea intorno agli altri elementi ul>li*/
+}
+
+.header-nav button{
+  font-size: 1em;
+  height: 3em;
+  width: 5em;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-img {
+  height: 10em;
+  align-self: center;
+}
+
+.pagina-venditore{
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 0 1.5em;
+}
+
+.tabella-prodotti-venditore {
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.tabella-prodotti-venditore tr{
+  border: solid .2em #1f1f1f;
+}
+
+.tabella-prodotti-venditore tr td, .tabella-prodotti-venditore tr th{
+  border: solid .1em #414141;
+  padding: .4em;
+}
+
+.cella-max-width{
+  max-width: 90px;
+}
+
+.text-left-align{
+  text-align: left;
+}
+
+.btn {
+  height: 2em;
+  border: none;
+  border-radius: 0.4em;
+  color: var(--fumoBianco);
+  background-color: var(--bluino);
+}
+.btn:hover {
+  background-color: #4382ca;
+  cursor: pointer;
+}
+
+.red-btn {
+  background-color: #be3b23;
+}
+
+.red-btn:hover {
+  background-color: #d84930;
+}
+
+.navigazione-acquisti{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.navigazione-acquisti div{
+  margin: 0 1em .4em 1em;
+}
+
+.navigazione-acquisti .barra-ricerca{
+  width: 30em;
+  height: 2.6em;
+  padding: 1.3em;
+  border-radius: .4em;
+  border: none;
+  background-color: var(--fumoBianco);
+}
+
+.contenitore-prodotti{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+nav.filtro-prodotti {
+  float: left;
+  background-color: #90cdd13a;
+  padding: 0 1em 40% .5em;
+  border-radius: .4em;
+}
+
+nav.filtro-prodotti ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#maxNumb, #minNumb {
+  width: 9.5em;
+  border: solid 1px #c5c5c5;
+  border-radius: .4em;
+  padding: .25em;
+}
+
+.prodotto{
+  /*flex-basis invece di width in questo caso*/
+  padding: 1em;
+  border: .15em solid #e5f0ee;
+  border-radius: .4em;
+  max-width: 290px;
+  margin: 1em;
+}
+
+.prodotto button {
+  float: right;
+}
+
+.immagine-prodotto {
+  max-width: 100%;
+}
+
+.mini-prev-img{
+  height: 5em;
+}
+
+.inline-format {
+  font-style: italic;
+}
+
+.left-main-footer,
+.left-main-footer h2 {
+  display: inline;
+}
+
+/*Il div che contiene la lista degli acquisti si comporta come una tabella.
+Risolve il problema del nesting di tabelle.*/
+.tabella-acquisti{
+  display: table;
+  border-collapse: collapse;
+}
+
+.titoli-riga-acquisti, .riga-acquisto {
+  display: table-row;
+}
+
+.titoli-riga-acquisti span, .riga-acquisto span {
+  display: table-cell;
+  border: .15em solid #1f1f1f;
+  padding: .2em;
+  text-align: center;
+}
+
+.titoli-riga-acquisti span{
+  font-weight: bold;
+}
+
+/*Styling lista prodotti per ogni acquisto*/
+.prods-table {
+  text-align: center;
+  vertical-align: center;
+}
+
+.prods-table tr:first-child{
+  font-style: italic;
+}
+
+.prods-table .riga-prodotto td {
+  padding-right: 1em;
+}
+
+.prods-table .riga-prodotto td:last-child {
+  padding-right: 0;
+}
+
+.prods-table .riga-prodotto .nome-riga-prodotto {
+  text-align: left;
+  color: #6e6e6e;
+}

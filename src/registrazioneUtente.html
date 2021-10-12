@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+    <title>S&B - Registrazione Utente</title>
+    <link rel="stylesheet" href="styleGeneral.css">
+</head>
+<body>
+    <header id="main-header">
+    </header>
+    <section>
+        <h2>Registrati come cliente</h2>
+        <form class="form-input" id="registrazioneUtente">
+            <table>
+                <tr>
+                    <td>Nome</td>
+                    <td>
+                        <input name="nome" type="text"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Cognome</td>
+                    <td>
+                        <input name="cognome" type="text"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Codice Fiscale</td>
+                    <td><input name="cf" type="text" required></td>
+                </tr>
+                <tr>
+                    <td>Nome utente</td>
+                    <td>
+                        <input name="username" type="text" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Nuova Password</td>
+                    <td>
+                        <input name="password" type="password" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Metodo d'acquisto</td>
+                    <td>
+                        <input type="checkbox" name="CartaCredito">Carta di Credito<br/>
+                        <input type="checkbox"  name="CartaDebito">Carta di Debito<br/>
+                        <input type="checkbox"  name="CartaPrepagata">Carta Prepagata<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Acconsento al trattamento dei dati <input type="checkbox" name="privacy">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" class="btn register-btn">Completa registrazione</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </section>
+    <footer id="main-footer">
+    </footer>
+</body>
+<script src="js/classi.js"></script>
+<script src="js/main.js"></script>
+</html>
